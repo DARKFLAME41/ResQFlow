@@ -80,9 +80,9 @@ export const AuthPage = () => {
           </p>
         </div>
 
-        {/* Quick Demo Autofill Bar for Hackathon Evaluation */}
+        {/* Quick Demo Autofill Bar */}
         <div className="bg-slate-950 p-3 rounded-xl border border-slate-800 text-xs text-center space-y-1.5">
-          <span className="text-slate-400 font-semibold block text-[11px]">⚡ Quick Hackathon Autofill:</span>
+          <span className="text-slate-400 font-semibold block text-[11px]">⚡ Quick Demo Autofill:</span>
           <div className="flex justify-center space-x-2">
             <button type="button" onClick={() => fillDemoAccount('Citizen')} className="px-2.5 py-1 bg-slate-800 hover:bg-rose-900/60 rounded text-[11px] font-bold text-slate-200">
               Citizen

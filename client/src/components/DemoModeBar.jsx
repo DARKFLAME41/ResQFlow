@@ -21,7 +21,7 @@ export const DemoModeBar = ({ onPresetSelect }) => {
 
         <div className="flex items-center space-x-2">
           <span className="bg-rose-600 text-white font-black px-2 py-0.5 rounded text-[10px] tracking-wider uppercase flex items-center gap-1 shadow">
-            <Zap className="w-3 h-3 fill-current animate-bounce" /> HACKATHON DEMO MODE
+            <Zap className="w-3 h-3 fill-current animate-bounce" /> QUICK ROLE SWITCHER
           </span>
           <span className="text-slate-300 hidden md:inline">
             Active Role: <strong className="text-rose-400">{user?.name}</strong> ({user?.role})

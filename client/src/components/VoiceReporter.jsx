@@ -68,10 +68,6 @@ export const VoiceReporter = ({ onVoiceTranscript, initialTranscript = '' }) => 
     }
   };
 
-  const handlePresetSelect = (phrase) => {
-    setTranscript(phrase);
-    if (onVoiceTranscript) onVoiceTranscript(phrase);
-  };
 
   return (
     <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 shadow-lg space-y-4">
@@ -130,36 +126,6 @@ export const VoiceReporter = ({ onVoiceTranscript, initialTranscript = '' }) => 
           placeholder="Your spoken message will transcribe here automatically. You can also type or edit details..."
           className="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-xs text-slate-100 focus:ring-2 focus:ring-rose-500 focus:border-rose-500"
         />
-      </div>
-
-      {/* Demo Quick Speech Presets for Hackathon Testers */}
-      <div className="pt-2 border-t border-slate-800">
-        <span className="text-[11px] font-semibold text-slate-400 block mb-2">
-          ⚡ Hackathon Quick Voice Presets:
-        </span>
-        <div className="flex flex-wrap gap-2">
-          <button
-            type="button"
-            onClick={() => handlePresetSelect('There was a bike accident near the college gate. Two people are injured and one person is unconscious.')}
-            className="text-[11px] bg-slate-800 hover:bg-rose-950 text-slate-300 hover:text-rose-300 border border-slate-700 px-2.5 py-1 rounded transition text-left"
-          >
-            "Bike accident near college gate..."
-          </button>
-          <button
-            type="button"
-            onClick={() => handlePresetSelect('There is a fire on the second floor of the building and people might be trapped inside.')}
-            className="text-[11px] bg-slate-800 hover:bg-rose-950 text-slate-300 hover:text-rose-300 border border-slate-700 px-2.5 py-1 rounded transition text-left"
-          >
-            "Building fire 2nd floor trapped..."
-          </button>
-          <button
-            type="button"
-            onClick={() => handlePresetSelect('An elderly man collapsed in central park with severe chest pain and short breath.')}
-            className="text-[11px] bg-slate-800 hover:bg-rose-950 text-slate-300 hover:text-rose-300 border border-slate-700 px-2.5 py-1 rounded transition text-left"
-          >
-            "Medical chest pain in park..."
-          </button>
-        </div>
       </div>
 
     </div>

@@ -3,7 +3,7 @@ import { authAPI } from '../services/api';
 
 const AuthContext = createContext();
 
-// Pre-seeded demo user accounts for one-click hackathon switching
+// Pre-seeded demo user accounts for one-click role switching
 export const DEMO_USERS = {
   Citizen: {
     id: 'usr-citizen-1',
@@ -89,7 +89,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('resqflow_token');
   };
 
-  // Instant demo switcher for hackathon judges
+  // Instant demo role switcher
   const switchDemoRole = (roleName) => {
     const demoAcc = DEMO_USERS[roleName] || DEMO_USERS.Citizen;
     setUser(demoAcc);

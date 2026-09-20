@@ -34,6 +34,51 @@
   ],
   "incidents": [
     {
+      "id": "inc-1789864400385",
+      "incidentId": "RSQ-2026-0006",
+      "reportedBy": {
+        "id": "usr-citizen-1",
+        "name": "Alex Rivera",
+        "email": "citizen@resqflow.org",
+        "phone": "+1 (555) 234-5678"
+      },
+      "type": "Road Accident",
+      "description": "An accident near Kovilpatti highway towards tirunelveli, near by National Engineering college",
+      "voiceTranscript": null,
+      "imageAnalysis": null,
+      "location": {
+        "address": "National Engineering College",
+        "landmark": "ASLR Coffee shop",
+        "latitude": 12.9724,
+        "longitude": 77.5951
+      },
+      "severity": "HIGH",
+      "priorityScore": 65,
+      "aiSummary": "Reported road accident involving approx 1 person(s). Key factors: Unconscious victim / severe trauma. Hazards: Road obstruction / traffic bottleneck. Immediate Ambulance intervention recommended.",
+      "peopleAffected": 1,
+      "injuries": [
+        "Unconscious victim / severe trauma"
+      ],
+      "hazards": [
+        "Road obstruction / traffic bottleneck"
+      ],
+      "requiredResources": [
+        "Ambulance",
+        "Medical Team",
+        "Police / Traffic Control"
+      ],
+      "aiRecommendedActions": [
+        "Dispatch nearest Ambulance immediately.",
+        "Notify nearest medical facility (City General Hospital).",
+        "Establish safety perimeter around location and coordinate traffic/access routes."
+      ],
+      "status": "REPORTED",
+      "assignedResponder": null,
+      "notes": [],
+      "createdAt": "2026-09-20T00:33:20.385Z",
+      "updatedAt": "2026-09-20T00:33:20.385Z"
+    },
+    {
       "id": "inc-101",
       "incidentId": "RSQ-2026-0001",
       "reportedBy": {
@@ -404,6 +449,16 @@
   ],
   "notifications": [
     {
+      "id": "notif-1789864400385-1",
+      "userId": "usr-citizen-1",
+      "incidentId": "RSQ-2026-0006",
+      "title": "🚨 Emergency Submitted",
+      "message": "Incident RSQ-2026-0006 received. AI Priority 65/100 (HIGH). Responders alerted.",
+      "type": "alert",
+      "read": false,
+      "createdAt": "2026-09-20T00:33:20.385Z"
+    },
+    {
       "id": "notif-1",
       "userId": "usr-citizen-1",
       "incidentId": "RSQ-2026-0001",
@@ -435,6 +490,14 @@
     }
   ],
   "timeline": [
+    {
+      "id": "tl-1789864400385",
+      "incidentId": "RSQ-2026-0006",
+      "status": "REPORTED",
+      "message": "Emergency reported (Road Accident). AI Priority Score: 65/100 [HIGH].",
+      "updatedBy": "Alex Rivera",
+      "timestamp": "2026-09-20T00:33:20.385Z"
+    },
     {
       "id": "tl-1",
       "incidentId": "RSQ-2026-0001",

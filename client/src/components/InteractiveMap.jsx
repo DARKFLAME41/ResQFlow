@@ -11,7 +11,7 @@ const createCustomIcon = (color, text = '!') => {
     <text x="12" y="16" font-size="11" font-weight="900" text-anchor="middle" fill="${color}">${text}</text>
   </svg>`;
   return L.icon({
-    iconUrl: `data:image/svg+xml;base64,${btoa(svg)}`,
+    iconUrl: `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`,
     iconSize: [30, 42],
     iconAnchor: [15, 42],
     popupAnchor: [0, -36]

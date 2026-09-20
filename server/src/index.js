@@ -58,7 +58,19 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal server error' });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
+
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error(`\n❌ PORT ${PORT} IS ALREADY IN USE.`);
+    console.error(`A ResQFlow server instance is already running on port ${PORT}.`);
+    console.error(`You can kill the existing process or set PORT=5001 npm run dev.\n`);
+    process.exit(1);
+  } else {
+    console.error('Server error:', err);
+  }
+});
+
 server.listen(PORT, () => {
   console.log(`
   ======================================================

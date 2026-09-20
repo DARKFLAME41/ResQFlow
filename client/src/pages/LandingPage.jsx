@@ -78,10 +78,10 @@ export const LandingPage = () => {
             )}
           </div>
 
-          {/* Interactive Hackathon Demo Role Shortcuts */}
+          {/* Interactive Demo Role Shortcuts */}
           <div className="pt-6 max-w-xl mx-auto bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4 shadow-xl">
             <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-3">
-              ⚡ Instant Hackathon Role Switcher:
+              ⚡ Instant Role Switcher:
             </span>
             <div className="grid grid-cols-3 gap-2 text-xs">
               <button
@@ -228,7 +228,7 @@ export const LandingPage = () => {
         <div className="flex items-center space-x-2">
           <Siren className="w-4 h-4 text-rose-500" />
           <span className="font-bold text-slate-300">ResQFlow Platform</span>
-          <span>© 2026 ResQFlow Hackathon Edition</span>
+          <span>© 2026 ResQFlow Emergency Response Platform</span>
         </div>
         <p>Built with React, Express, Socket.IO & AI Emergency Pipeline.</p>
       </footer>
